@@ -76,7 +76,7 @@ extension ParsableCommand {
   ///
   /// - Parameter arguments: An array of arguments to use for parsing. If
   ///   `arguments` is `nil`, this uses the program's command-line arguments.
-  public static func main(_ arguments: [String]? = nil) -> Never {
+  public static func main(_ arguments: [String]? = nil) {
     do {
       let command = try parseAsRoot(arguments)
       try command.run()
