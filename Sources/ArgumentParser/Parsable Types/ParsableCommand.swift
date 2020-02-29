@@ -80,7 +80,7 @@ extension ParsableCommand {
     do {
       let command = try parseAsRoot(arguments)
       try command.run()
-      exit()
+//      exit()
     } catch {
       exit(withError: error)
     }
